@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Запись на курс</title>
+</head>
+<body>
+    <h2>Запись на курс</h2>
+    <form action="course.php" method="post">
+        <label>ФИО: <input type="text" name="fio"></label><br><br>
+
+        <label>Направление обучения:
+            <select name="course">
+                <option value="PHP">PHP</option>
+                <option value="HTML">HTML</option>
+                <option value="Python">Python</option>
+            </select>
+        </label><br><br>
+
+        Формат обучения:<br>
+        <label><input type="radio" name="format" value="Очно" checked> Очно</label><br>
+        <label><input type="radio" name="format" value="Онлайн"> Онлайн</label><br><br>
+
+        Интересы:<br>
+        <label><input type="checkbox" name="interests[]" value="Практика"> Практика</label><br>
+        <label><input type="checkbox" name="interests[]" value="Теория"> Теория</label><br>
+        <label><input type="checkbox" name="interests[]" value="Проекты"> Проекты</label><br><br>
+
+        <label><input type="checkbox" name="agree" value="1"> Согласен на обработку данных</label><br><br>
+
+        <button type="submit">Записаться</button>
+    </form>
+</body>
+</html>
