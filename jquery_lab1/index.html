@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 24px;
+    }
+
+    .card {
+        border: 1px solid #999;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+
+    .selected {
+        border: 3px solid #2b77c0;
+        background: #eaf5ff;
+    }
+
+    button {
+        margin: 4px 6px 4px 0;
+        padding: 7px 10px;
+    }
+</style>
+
+
+<body>
+    </head>
+    <body>
+        <h1 id="title">Каталог товаров</h1>
+        <p id="description">Выберите товар из списка.</p>
+        <div id="catalog">
+            <div class="card" id="firstCard" title="Первый товар">
+                <h3>Тетрадь</h3>
+                <p class="price" id="anotherPrice1">90 руб.</p>
+            </div>
+            <div class="card">
+                <h3>Ручка</h3>
+                <p class="price" id="anotherPrice2">40 руб.</p>
+            </div>
+            <div class="card" id="thirdCard">
+                <h3 id="thirdName">Блокнот</h3>
+                <p class="price">150 руб.</p>
+            </div>
+        </div>
+        <button id="renameBtn">Переименовать заголовок</button>
+        <button id="selectBtn">Выделить товар</button>
+        <button id="toggleBtn">Скрыть / показать описание</button>
+        <button id="updateBtn">Обновить цены</button>
+        <button id="illuminateBtn">Подсветить все товары</button>
+        <button id="highlighteBtn">Выделить все</button>
+        <button id="cancelBtn">Отменить выделение</button>
+        <button id="changeBtn">Изменить ссылку</button>
+    </body>
+    <br><a id="infoLink" href="#">Подробнее</a>
+</html>
