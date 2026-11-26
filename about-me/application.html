@@ -6,110 +6,126 @@
     <title>Заявка на учебный кружок Егорова Анастасия</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="index.html">Обо мне</a></li>
-        <li><a href="hoddy.html">мои увлечения</a></li>
-        <li><a href="colleg.html">мой коллежд</a></li>
-        <li><a href="season.html">Сезон</a></li>
-        <li><a href="samost.html">зима</a></li>
-        <li><a href="schedule.html">Расписание</a></li>
-        <li><a href="application.html">Заявка</a></li>
-      </ul>
-    </nav>
+    <header>
+        <p>Учебный сайт студента ИС-2к-25</p>
+        <nav aria-label="Главное меню">
+          <ul>
+            <li><a href="index.html">Обо мне</a></li>
+            <li><a href="hoddy.html">мои увлечения</a></li>
+            <li><a href="colleg.html">мой коллежд</a></li>
+            <li><a href="season.html">Сезон</a></li>
+            <li><a href="samost.html">зима</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="application.html">Заявка</a></li>
+            <li><a href="club.html">Клуб Яричин</a></li>
+          </ul>
+        </nav>
+      </header>
 
-    <h1>Заявка на учебный кружок</h1>
-    <h3>
-      Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и не
-      поступает организатору
-    </h3>
-    <hr />
-    <form action="application.html" method="get">
-      <p>
-        <label for="student">Учебное имя</label>
-        <input id="student" name="student" type="text" minlength="2" required />
-      </p>
-
-      <p>
-        <label for="email">Учебная почта</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="temiko.udzumaki1010@gmail.com"
-          required
-        />
-      </p>
-
-      <p>
-        <label for="photo">Телефон из 11 цифр</label>
-        <input
-          id="phone"
-          name="phone"
-          type="tel"
-          pattern="[0-9]{11}"
-          required
-          aria-describedby="phone-help"
-        />
-        <small id="phone-help">Без пробелов и знака +</small>
-      </p>
-
-      <p>
-        <label for="date">Желаемая дата занятий</label>
-        <input id="date" name="date" type="date" required />
-      </p>
-
-      <fieldset>
-        <legend>формат занятий</legend>
+    <main>
+      <h1>Заявка на учебный кружок</h1>
+      <h3>
+        Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и
+        не поступает организатору
+      </h3>
+      <hr />
+      <form action="application.html" method="get">
         <p>
+          <label for="student">Учебное имя</label>
           <input
-            id="offline"
-            type="radio"
-            name="format"
-            value="offline"
+            id="student"
+            name="student"
+            type="text"
+            minlength="2"
             required
           />
-          <label for="offline">В коледже</label>
         </p>
 
         <p>
+          <label for="email">Учебная почта</label>
           <input
-            id="online"
-            type="radio"
-            name="format"
-            value="online"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="temiko.udzumaki1010@gmail.com"
             required
           />
-          <label for="online">Дистанционно</label>
         </p>
-      </fieldset>
-      <p>
-        <label for="topic">Направление</label>
-        <select id="topic" name="topic" required>
-          <option value="">Выберете направление</option>
-          <option value="HTML">HTML</option>
-          <option value="Git">Git</option>
-          <option value="PHP">PHP</option>
-        </select>
-      </p>
 
-      <p>
-        <input id="reminder" name="reminder" type="checkbox" value="yes" />
-        <label for="reminder">Добавить учебное напоминание</label>
-      </p>
+        <p>
+          <label for="phone">Телефон из 11 цифр</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            pattern="[0-9]{11}"
+            required
+            aria-describedby="phone-help"
+          />
+          <small id="phone-help">Без пробелов и знака +</small>
+        </p>
 
-      <p>
-        <label for="comment">Чему хотите науичтся</label>
-        <textarea
-          id="comment"
-          name="comment"
-          rows="4"
-          maxlength="300"
-          required
-        ></textarea>
-      </p>
-      <button type="submit">отправить свой учебный проект</button>
-      <button type="reset">Сбросить поля</button>
-    </form>
+        <p>
+          <label for="date">Желаемая дата занятий</label>
+          <input id="date" name="date" type="date" required />
+        </p>
+
+        <fieldset>
+          <legend>формат занятий</legend>
+          <p>
+            <input
+              id="offline"
+              type="radio"
+              name="format"
+              value="offline"
+              required
+            />
+            <label for="offline">В коледже</label>
+          </p>
+
+          <p>
+            <input
+              id="online"
+              type="radio"
+              name="format"
+              value="online"
+              required
+            />
+            <label for="online">Дистанционно</label>
+          </p>
+        </fieldset>
+        <p>
+          <label for="topic">Направление</label>
+          <select id="topic" name="topic" required>
+            <option value="">Выберете направление</option>
+            <option value="HTML">HTML</option>
+            <option value="Git">Git</option>
+            <option value="PHP">PHP</option>
+          </select>
+        </p>
+
+        <p>
+          <input id="reminder" name="reminder" type="checkbox" value="yes" />
+          <label for="reminder">Добавить учебное напоминание</label>
+        </p>
+
+        <p>
+          <label for="comment">Чему хотите науичтся</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            maxlength="300"
+            required
+          ></textarea>
+        </p>
+        <button type="submit">отправить свой учебный проект</button>
+        <button type="reset">Сбросить поля</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Автор: Егорова Анастасия. Учебная практика УП.09.</p>
+    </footer>
   </body>
 </html>

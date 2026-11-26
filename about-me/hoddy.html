@@ -6,7 +6,9 @@
     <title>Мои увличения - Егорова анастасия</title>
   </head>
   <body>
-    <nav>
+    <header>
+      <p>Учебный сайт студента ИС-2к-25</p>
+      <nav aria-label="Главное меню">
         <ul>
           <li><a href="index.html">Обо мне</a></li>
           <li><a href="hoddy.html">мои увлечения</a></li>
@@ -15,49 +17,65 @@
           <li><a href="samost.html">зима</a></li>
           <li><a href="schedule.html">Расписание</a></li>
           <li><a href="application.html">Заявка</a></li>
+          <li><a href="club.html">Клуб Яричин</a></li>
         </ul>
       </nav>
-    <h1>мои увлечения</h1>
-    <figure>
-      <img src="photo/генш.webp" alt="Мой любимый герой" width="500" />
-      <figcaption>Рис. 1. Мое любимое увлечение</figcaption>
-    </figure>
-    <h2>чем я люблю заниматся</h2>
-    <ul>
-      <li>кинология</li>
-      <li>аниме</li>
-      <li>геншин</li>
-    </ul>
+    </header>
 
-    <h2>Мой топ 3 фильмов</h2>
-    <ol>
-      <li>Илюзия обмана</li>
-      <li>Мстители финал</li>
-      <li>Человек паук нет пути домой</li>
+    <main>
+      <h1>мои увлечения</h1>
+      <figure>
+        <img src="photo/генш.webp" alt="Мой любимый герой" width="500" />
+        <figcaption>Рис. 1. Мое любимое увлечение</figcaption>
+      </figure>
+
+      <section aria-labelledby="about">
+        <h2>чем я люблю заниматся</h2>
+        <ul>
+          <li>кинология</li>
+          <li>аниме</li>
+          <li>геншин</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="about">
+        <h2>Мой топ 3 фильмов</h2>
         <ol>
+          <li>Илюзия обмана</li>
+          <li>Мстители финал</li>
+          <li>Человек паук нет пути домой</li>
+          <ol>
             <li>сериалы</li>
             <ol>
-                <li>ганибал</li>
+              <li>ганибал</li>
             </ol>
+          </ol>
         </ol>
-    </ol>
+      </section>
 
-    <h2>Что я изучаю на практике</h2>
-    <ul>
-      <li>
-        HTML
+      <section aria-labelledby="about">
+        <h2>Что я изучаю на практике</h2>
         <ul>
-          <li>заголовки и абзацы</li>
-          <li>списки и ссылки</li>
+          <li>
+            HTML
+            <ul>
+              <li>заголовки и абзацы</li>
+              <li>списки и ссылки</li>
+            </ul>
+          </li>
+          <li>
+            Git
+            <ul>
+              <li>Комимиты</li>
+              <li>ветки и gitHub</li>
+            </ul>
+          </li>
         </ul>
-      </li>
-      <li>
-        Git
-        <ul>
-          <li>Комимиты</li>
-          <li>ветки и gitHub</li>
-        </ul>
-      </li>
-    </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>Автор: Егорова Анастасия. Учебная практика УП.09.</p>
+    </footer>
   </body>
 </html>

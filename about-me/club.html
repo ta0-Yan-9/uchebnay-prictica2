@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клуб Яричин</title>
+</head>
+<body>
+    <header>
+        <p>Учебный сайт студента ИС-2к-25</p>
+        <nav aria-label="Главное меню">
+          <ul>
+            <li><a href="index.html">Обо мне</a></li>
+            <li><a href="hoddy.html">мои увлечения</a></li>
+            <li><a href="colleg.html">мой коллежд</a></li>
+            <li><a href="season.html">Сезон</a></li>
+            <li><a href="samost.html">зима</a></li>
+            <li><a href="schedule.html">Расписание</a></li>
+            <li><a href="application.html">Заявка</a></li>
+            <li><a href="club.html">Клуб Яричин</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<main>
+    <h1>Приглащаем вас в наш клуб Фотографий</h1>
+
+    <section aria-labelledby="about">
+        <h2>О клубе</h2>
+        <p>Очень дружный клуб, всегда поддерживает друг друга</p>
+    </section>
+
+    <section aria-labelledby="about">
+        <h2>Новости</h2>
+        <p>Недвано клуб занял первое место в конкурсе клубов школы Мори-Мори</p>
+    </section>
+
+    <table>
+        <caption>
+            <strong>Расписание Клуба Яричин</strong>
+        </caption>
+        <thead>
+          <tr>
+            <th scope="col">День</th>
+            <th scope="col">Тема</th>
+            <th scope="col">Кабинет</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th rowspan="3" scope="rowgroup">Понедельник</th>
+            <td>Новички</td>
+            <td>3В</td>
+          </tr>
+          <tr>
+            <td>Подготовка к конкурсу</td>
+            <td>1С</td>
+          </tr>
+          <tr>
+            <td>Собрание</td>
+            <td>2А</td>
+          </tr>
+        </tbody>
+          <tr>
+            <th colspan="3" scope="row"></th>
+          </tr>
+
+      </table>
+
+
+
+      <h1>Заявка на вступление</h1>
+
+      <p><strong>
+        Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и
+        не поступает организатору
+    </strong>
+      </p>
+      <hr>
+      <form action="club.html" method="get">
+        <p>
+          <label for="student">Учебное имя</label>
+          <input
+            id="student"
+            name="student"
+            type="text"
+            minlength="2"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="email">Учебная почта</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="temiko.udzumaki1010@gmail.com"
+            required
+          />
+        </p>
+
+        <p>
+          <label for="phone">Телефон из 11 цифр</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            pattern="[0-9]{11}"
+            required
+            aria-describedby="phone-help"
+          />
+          <small id="phone-help">Без пробелов и знака +</small>
+        </p>
+
+        <fieldset>
+        
+        <p>
+          <label for="topic">Направление</label>
+          <select id="topic" name="topic" required>
+            <option value="">Выберете курс</option>
+            <option value="1 курс">1 курс</option>
+            <option value="2 курс">2 курс</option>
+            <option value="3 курс">3 курс</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="comment">Чему хотите науичтся</label>
+          <textarea
+            id="comment"
+            name="comment"
+            rows="4"
+            maxlength="300"
+            required
+          ></textarea>
+        </p>
+        <button type="submit">отправить свой учебный проект</button>
+        <button type="reset">Сбросить поля</button>
+    </fieldset>
+      </form>
+
+
+</main>
+
+</body>
+</html>
