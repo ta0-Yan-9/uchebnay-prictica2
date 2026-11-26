@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Клуб Яричин</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <p>Учебный сайт студента ИС-2к-25</p>
-        <nav aria-label="Главное меню">
-          <ul>
-            <li><a href="index.html">Обо мне</a></li>
-            <li><a href="hoddy.html">мои увлечения</a></li>
-            <li><a href="colleg.html">мой коллежд</a></li>
-            <li><a href="season.html">Сезон</a></li>
-            <li><a href="samost.html">зима</a></li>
-            <li><a href="schedule.html">Расписание</a></li>
-            <li><a href="application.html">Заявка</a></li>
-            <li><a href="club.html">Клуб Яричин</a></li>
-          </ul>
-        </nav>
-      </header>
+      <p>Учебный сайт студента ИС-2к-25</p>
+      <nav aria-label="Главное меню">
+        <ul>
+          <li><a href="index.html">Обо мне</a></li>
+          <li><a href="hoddy.html">мои увлечения</a></li>
+          <li><a href="colleg.html">мой коллежд</a></li>
+          <li><a href="season.html">Сезон</a></li>
+          <li><a href="samost.html">зима</a></li>
+          <li><a href="schedule.html">Расписание</a></li>
+          <li><a href="application.html">Заявка</a></li>
+          <li><a href="club.html">Клуб Яричин</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<main>
-    <h1>Приглащаем вас в наш клуб Фотографий</h1>
+    <main>
+      <h1>Приглащаем вас в наш клуб Фотографий</h1>
 
-    <section aria-labelledby="about">
+      <section aria-labelledby="about">
         <h2>О клубе</h2>
         <p>Очень дружный клуб, всегда поддерживает друг друга</p>
-    </section>
+      </section>
 
-    <section aria-labelledby="about">
+      <section aria-labelledby="about">
         <h2>Новости</h2>
         <p>Недвано клуб занял первое место в конкурсе клубов школы Мори-Мори</p>
-    </section>
+      </section>
 
-    <table>
+      <table>
         <caption>
-            <strong>Расписание Клуба Яричин</strong>
+          <strong>Расписание Клуба Яричин</strong>
         </caption>
         <thead>
           <tr>
@@ -62,22 +62,20 @@
             <td>2А</td>
           </tr>
         </tbody>
-          <tr>
-            <th colspan="3" scope="row"></th>
-          </tr>
-
+        <tr>
+          <th colspan="3" scope="row"></th>
+        </tr>
       </table>
-
-
 
       <h1>Заявка на вступление</h1>
 
-      <p><strong>
-        Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и
-        не поступает организатору
-    </strong>
+      <p>
+        <strong>
+          Это учебная форма. Вводите вымышленные данные. Заявка не сохраняется и
+          не поступает организатору
+        </strong>
       </p>
-      <hr>
+      <hr />
       <form action="club.html" method="get">
         <p>
           <label for="student">Учебное имя</label>
@@ -86,6 +84,7 @@
             name="student"
             type="text"
             minlength="2"
+            maxlength="20"
             required
           />
         </p>
@@ -107,6 +106,8 @@
             id="phone"
             name="phone"
             type="tel"
+            maxlength="11"
+            value="8"
             pattern="[0-9]{11}"
             required
             aria-describedby="phone-help"
@@ -115,34 +116,56 @@
         </p>
 
         <fieldset>
-        
-        <p>
-          <label for="topic">Курс</label>
-          <select id="topic" name="topic" required>
-            <option value="">Выберете курс</option>
-            <option value="1 курс">1 курс</option>
-            <option value="2 курс">2 курс</option>
-            <option value="3 курс">3 курс</option>
-          </select>
-        </p>
+                <legend>Любимый Цвет</legend>
+                <p>
+                  <input
+                    id="offline"
+                    type="radio"
+                    name="format"
+                    value="offline"
+                    required
+                  />
+                  <label for="offline">Голубой</label>
+                </p>
+      
+                <p>
+                  <input
+                    id="online"
+                    type="radio"
+                    name="format"
+                    value="online"
+                    required
+                  />
+                  <label for="online">Розовый</label>
+                </p>
+          <p>
+            <label for="topic">Курс</label>
+            <select id="topic" name="topic" required>
+              <option value="">Выберете курс</option>
+              <option value="1 курс">1 курс</option>
+              <option value="2 курс">2 курс</option>
+              <option value="3 курс">3 курс</option>
+            </select>
+          </p>
 
-        <p>
-          <label for="comment">Чему хотите науичтся</label>
-          <textarea
-            id="comment"
-            name="comment"
-            rows="4"
-            maxlength="300"
-            required
-          ></textarea>
-        </p>
-        <button type="submit">отправить свой учебный проект</button>
-        <button type="reset">Сбросить поля</button>
-    </fieldset>
+          <p>
+            <label for="comment">Чему хотите науичтся</label>
+            <textarea
+              id="comment"
+              name="comment"
+              rows="4"
+              maxlength="300"
+              required
+            ></textarea>
+          </p>
+          <button type="submit">отправить свой учебный проект</button>
+          <button type="reset">Сбросить поля</button>
+        </fieldset>
       </form>
 
-
-</main>
-
-</body>
+      <footer>
+        <p>Автор: Егорова Анастасия. Учебная практика УП.09.</p>
+      </footer>
+    </main>
+  </body>
 </html>
